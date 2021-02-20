@@ -1,0 +1,709 @@
+/*====================================================
+*   Author      :   Mahabub (mahabubdev)
+*   Author-URI  :   https://github.com/mahabubdev/
+*   Version     :   1.0.0
+*===================================================*/
+// vars
+$prColor : #FA4D56;
+$scColor : #FFFFFF;
+$whColor: #FFFFFF;
+$bgColor: #FFFFFF;
+$whBgColor: #f7f7f5;
+$txtColor: #1e1d24;
+$txtColorLite: #6e6e6e;
+
+
+// root CSS
+:root {
+    --hdwd: 4rem;
+    --btn-shdw: 0 .2rem .5rem 0 rgba(250, 77, 86, .5);
+}
+*::-webkit-scrollbar {
+    background-color: #f7f7f5;
+    width: .2rem;
+}
+body::-webkit-scrollbar {
+    background-color: #f7f7f5;
+    width: .5rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #FA4D56;
+}
+::selection {
+    background-color: #178b3a;
+    color: #FFFFFF;
+}
+
+
+// glabal CSS
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $txtColor;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: $bgColor;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,b,strong {
+    font-family: 'Sora', sans-serif;
+    color: $txtColor;
+}
+
+h1 {font-weight: 800; font-size: 2rem;}
+h2 {font-weight: 700; font-size: 1.8rem;}
+h3 {font-weight: 700; font-size: 1.6rem;}
+h4 {font-weight: 700; font-size: 1.5rem;}
+h5 {font-weight: 600; font-size: 1.4rem;}
+h6 {font-weight: 500; font-size: 1.2rem;}
+
+p {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+b, strong {font-weight: 700;}
+a {text-decoration: none;}
+ul, li {list-style: none;}
+
+#mlogo {font-family: 'Monoton', cursive;}
+.bdy_wrap {
+    position: relative;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.menu-swith {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    visibility: hidden;
+    font-size: 1.5rem;
+    opacity: .6;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+// own-framework
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    position: relative;
+    padding: 80px 0;
+
+    // h2
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+    padding: .7rem 1.5rem;
+    border-radius: 0.375rem;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+    -o-border-radius: 0.375rem;
+}
+.btn-out {
+    background-color: transparent;
+    border: 2px solid $prColor;
+}
+.btn-fill {
+    background-color: $prColor;
+    border: 2px solid $prColor;
+    color: $whColor;
+}
+
+.pd-1 {
+    padding: 10px;
+} 
+.pd-2 {
+    padding: 1rem;
+} 
+.pd-3 {
+    padding: 1.5rem;
+} 
+
+.py-1 {
+    padding: 10px 0;
+} 
+.py-2 {
+    padding: 1rem 0;
+} 
+.py-3 {
+    padding: 1.5rem 0;
+} 
+
+.px-1 {
+    padding: 0 10px;
+} 
+.px-2 {
+    padding: 0 1rem;
+} 
+.px-3 {
+    padding: 0 1.5rem;
+} 
+.pt-1{padding-top: 10px;}
+.pt-2{padding-top: 1rem;}
+.pt-3{padding-top: 1.5rem;}
+
+
+.flx {
+    display: flex;
+    gap: 1rem .875rem;
+}
+.al-center {
+    align-items: center;
+}
+.flx-between {
+    justify-content: space-between;
+}
+.flx-end{
+    justify-content: flex-end;
+}
+
+.menu {
+    display: inline-flex;
+    padding-left: 0;
+    li {
+        cursor: pointer;
+    }
+}
+
+
+
+.nav-menu, .btn-menu{
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 1.5rem;
+    width: auto;
+
+    // li a
+    li {
+        a {
+            text-transform: uppercase;
+        }
+    }
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.btn-menu, .btns {
+    .btn {
+        box-shadow: var(--btn-shdw);
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+        -moz-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+        -o-transform: translateY(-3px);
+    }
+}
+.btn-menu {
+    margin-left: 1rem;
+}
+
+.nav-menu {
+    li a {
+        text-align: center;
+        position: relative;
+        &::after {
+            display: inline-block;
+            content: '';
+            clear: both;
+            position: absolute;
+            bottom: -.3rem;
+            height: 3px;
+            background-color: $prColor;
+            max-width: 0;
+            transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+        }
+
+        &:hover {
+            &::after {
+                max-width: 2.5rem;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+            }
+        }
+
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+    }
+}
+
+// btnclose
+#toggle-cross {
+    display: none;
+}
+
+.nav-sidebar {
+
+    // btnclose
+    #toggle-cross {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1rem 1rem 0 0;
+        color: $whColor;
+        font-size: 2rem;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    min-height: 100vh;
+    z-index: 9999;
+    background-color: rgb(250, 77, 86);
+    color: #FFFFFF;
+    gap: 1rem;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+
+.side-tag {
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0 .3rem;
+    z-index: 999;
+
+    // side tag dashbar
+    .dash-bar {
+        display: inline-block;
+        min-width: 4rem;
+        height: 2px;
+        background: $prColor;
+    }
+    .followme-menu {
+        display: inline-flex;
+        justify-content: space-around;
+        gap: 1rem;
+
+        li a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+        }
+    }
+}
+.left-tag {
+    left: -80px;
+    top: 160px;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+}
+.right-tag {
+    right: -80px;
+    top: 160px;
+    flex-direction: row-reverse;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.side-btn {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: .7rem 2rem;
+    background-color: $whBgColor;
+    color: $txtColorLite;
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+}
+
+// custom stylesheets
+.header {
+    margin: 0;
+    padding: 0;
+    min-height: var(--hdwd);
+    width: 100%;
+
+    // container
+    .container {
+        max-width: 1500px;
+        width: 85%;
+    }
+
+    // logo
+    .logo {
+        font-size: 2.5em;
+    }
+    
+}
+
+.hero {
+    display: flex;
+    min-height: calc(100vh - var(--hdwd));
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    // .left-tag
+    .left-tag {
+        top: calc(50% + 30px);
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+        font-weight: 800;
+    }
+    p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: $txtColorLite;
+    }
+    h3 {
+        text-transform: capitalize;
+        margin-bottom: .4rem;
+    }
+    .bio-tags {
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        gap: .125rem 1.5rem;
+
+        // li
+        li {
+            display: inline-block;
+            position: relative;
+            text-transform: capitalize;
+
+            &::after {
+                display: inline-block;
+                position: absolute;
+                content: '';
+                clear: both;
+                top: .4rem;
+                right: -1rem;
+                width: .5rem;
+                height: .5rem;
+                background-color: $prColor;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .hero-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        padding: 0;
+        gap: 1rem;
+
+        // left
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        // right
+        .hero-right {
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                width: 100%;
+                max-width: 540px;
+            }
+        }
+    }
+
+    .btn {
+        text-transform: capitalize;
+        padding: 1rem 2rem;
+        &:first-child {
+            margin-right: 1rem;
+        }
+    }
+}
+
+
+
+
+/*===== RESPONSIVE CSS =====*/
+
+// mid-screen laptops+desktops
+@media (max-width: 1439.99px) {
+    p, .btn {
+        font-size: 1rem !important;
+    }
+
+    .left-tag {
+        left: -100px;
+    }
+    .right-tag {
+        right: -100px;
+    }
+}
+
+// Small Laptops 12" 10"
+@media (max-width: 1198.99px) {
+    p, .btn {
+        font-size: 1rem !important;
+    }
+    .menu-swith {
+        display: inline-flex;
+        text-transform: uppercase;
+        visibility: visible;
+        opacity: 1;
+    }
+    .nav-menu, .btn-menu{
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+    }
+    .nav-sidebar {
+        left: 0;
+        max-height: 100vh;
+
+        .nav-menu, .btn-menu{
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem 0;
+            width: 100%;
+            padding: 3.5rem 0 1rem;
+            max-height: calc(100vh - 300px);
+            li {
+                display: block;
+                width: 100%;
+                a {
+                    display: block;
+                    width: 100%;
+                    padding: .75rem 0;
+                    color: #FFFFFF;
+                    border-left: 2px solid transparent;
+                    cursor: pointer;
+
+                    &:hover {
+                        border-left: 2px solid $whColor;
+                        background-color: #dd4d55;
+                    }
+                }
+            }
+        }
+
+        .btn-menu {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            margin-left: 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem 0;
+
+            li {
+                width: 100%;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    padding: .8rem 0;
+                    background: linear-gradient(90deg, #FA4D56, #fc4949);
+                }
+            }
+        }
+    }
+
+    .hero {
+        .hero-container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            flex-direction: column;
+
+            .hero-left {
+                h1 { font-size: 3rem; }
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero-right {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+// big screen Tabs 12" 10"
+@media (max-width: 991.99px) {
+    //
+}
+
+
+// Tabs or large Smartphones
+@media (max-width: 767.99px) {
+    .hero {
+        .hero-container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            flex-direction: column;
+
+            .hero-left {
+                h1 { font-size: 2.4rem; }
+                margin-bottom: 0;
+            }
+
+            .hero-right {
+                display: none;
+            }
+        }
+    }
+
+    .nav-sidebar {
+        width: 100%;
+    }
+}
+
+// Smartphones
+@media (max-width: 539.99px) {
+    .hero {
+        .hero-container {
+            padding-left: 0;
+            padding-right: 0;
+
+            .hero-left {
+                h1 { font-size: 2rem; }
+                .bio-tags {
+                    flex-direction: column;
+                    gap: 1rem 0;
+                    li {
+                        &::after {
+                            top: 1.5rem;
+                            left: calc(50% - .3rem);
+                        }
+                    }
+                }
+            }
+        }
+
+        .left-tag {
+            top: calc(30% + 140px);
+            left: -150px;
+        }
+    }
+
+    .right-tag {
+        right: -150px;
+    }
+
+    
+}
+
+
+
+// Smartphones and small sreens
+@media (max-width: 419.99px) {
+    .hero {
+        padding-top: 0;
+
+        .left-tag {
+            top: calc(30% + 70px);
+        }
+
+        .hero-container {
+            .hero-left {
+                h1 { font-size: 1.8rem; text-align: center; }
+                h3 {font-size: 1.3rem; margin-bottom: 1rem;}
+                .bio-tags {margin-bottom: 1.5rem;}
+                .btns {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem 0;
+
+                    .btn {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
