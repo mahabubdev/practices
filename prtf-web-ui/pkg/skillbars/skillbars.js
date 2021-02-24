@@ -45,7 +45,7 @@
             //     childElements[_ch].dataset.sk_name,
             //     childElements[_ch].dataset.sk_percent
             // );
-            console.log(this._argImg);
+            // console.log(this._argImg);
 
             // conditional elements
             if (this._argImg === true) {

@@ -9,7 +9,7 @@
 
     function main() {
         // register all modules
-        console.log("Javascript initiated...!");
+        // console.log("Javascript initiated...!");
 
         // handle nav-menus
         handleNavs();
@@ -61,7 +61,7 @@
         rootElement: '.skill_bars',  // you can pass custom selector like. #skillbars or .myskills_bar etc.
         // type: 'linear',             // default : linear | ['linear', 'circle']
         options : {
-            // img: true,          // default: false; make sure `attribute` data-img='src' in .skill_bar elements
+            img: true,          // default: false; make sure `attribute` data-img='src' in .skill_bar elements
         }
     });
 
