@@ -55,13 +55,23 @@
 
 
     /**==============================*
-     * Page Loading
+     * Skillsbar
      *==============================*/
+    new Skillbars({
+        rootElement: '.skill_bars',  // you can pass custom selector like. #skillbars or .myskills_bar etc.
+        // type: 'linear',             // default : linear | ['linear', 'circle']
+        options : {
+            // img: true,          // default: false; make sure `attribute` data-img='src' in .skill_bar elements
+        }
+    });
+
+
+    // new Skillbars({});
 
 
 
     /**==============================*
-     * Page Loading
+     * Masonry
      *==============================*/
 
 

@@ -335,7 +335,7 @@ section {
     align-items: center;
     justify-content: space-around;
     gap: 0 .3rem;
-    z-index: 999;
+    z-index: 99;
 
     // side tag dashbar
     .dash-bar {
@@ -362,7 +362,7 @@ section {
     }
 }
 .left-tag {
-    left: -80px;
+    left: 0;
     top: 160px;
     transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
@@ -423,6 +423,7 @@ section {
     // .left-tag
     .left-tag {
         top: calc(50% + 30px);
+        left: -80px;
     }
 
     h1 {
@@ -532,355 +533,22 @@ section {
 }
 
 
+// Skillbars
 
-
-/*===== RESPONSIVE CSS =====*/
-
-// mid-screen laptops+desktops
-@media (max-width: 1439.99px) {
-    p, .btn {
-        font-size: 1rem !important;
-    }
-
-    .left-tag {
-        left: -100px;
-    }
-    .right-tag {
-        right: -50px;
-    }
+.skill_bars {
+    display: grid;
+    gap: 1rem .75rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-// Small Laptops 12" 10"
-@media (max-width: 1198.99px) {
-    p, .btn {
-        font-size: 1rem !important;
-    }
-    .menu-swith {
-        display: inline-flex;
-        text-transform: uppercase;
-        visibility: visible;
-        opacity: 1;
-    }
-    .nav-menu, .btn-menu{
-        visibility: hidden;
-        opacity: 0;
-        width: 0;
-    }
-    .nav-sidebar {
-        left: 0;
-        max-height: 100vh;
+// masonry
+.masonry-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
-        .nav-menu, .btn-menu{
-            visibility: visible;
-            opacity: 1;
-        }
-
-        .nav-menu {
-            display: flex;
-            flex-direction: column;
-            gap: .5rem 0;
-            width: 100%;
-            padding: 3.5rem 0 1rem;
-            max-height: 50%;
-            li {
-                display: block;
-                width: 100%;
-                a {
-                    display: block;
-                    width: 100%;
-                    padding: .75rem 0;
-                    color: #FFFFFF;
-                    border-left: 2px solid transparent;
-                    cursor: pointer;
-
-                    &:hover {
-                        border-left: 2px solid $whColor;
-                        background-color: #dd4d55;
-                    }
-                }
-            }
-        }
-
-        .btn-menu {
-            position: absolute;
-            bottom: 10px;
-            left: 0;
-            margin-left: 0;
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem 0;
-
-            li {
-                width: 100%;
-
-                a {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    padding: .8rem 0;
-                    background: linear-gradient(90deg, #FA4D56, #fc4949);
-                }
-            }
-        }
-    }
-
-    .hero {
-        .hero-container {
-            padding-left: 1rem;
-            padding-right: 1rem;
-            flex-direction: column;
-
-            .hero-left {
-                h1 { font-size: 3rem; }
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 1.5rem;
-            }
-
-            .hero-right {
-                justify-content: center;
-            }
-        }
-    }
-}
-
-// big screen Tabs 12" 10"
-@media (max-width: 991.99px) {
-    .about {
-        .container {
-            flex-direction: column;
-            gap: 1rem 0;
-
-            .visuals, .contents {
-                max-width: 100%;
-            }
-
-            .contents {
-                margin-bottom: 2rem;
-                .btns {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-        }
-    }
-}
-
-
-// Tabs or large Smartphones
-@media (max-width: 767.99px) {
-
-    .container {
-        padding: 0 .8rem;
-    }
-
-    .hero {
-        .hero-container {
-            padding-left: 0;
-            padding-right: 0;
-            flex-direction: column;
-
-            .hero-left {
-                h1 { font-size: 2.4rem; }
-                margin-bottom: 0;
-            }
-
-            .hero-right {
-                display: none;
-            }
-        }
-
-        .left-tag {
-            top: calc(30% + 140px) !important;
-            left: -150px !important;
-            transform: rotate(270deg);
-            -webkit-transform: rotate(270deg);
-            -moz-transform: rotate(270deg);
-            -ms-transform: rotate(270deg);
-            -o-transform: rotate(270deg);
-        }
-    }
-
-    .nav-sidebar {
-        width: 100%;
-    }
-
-    .right-tag {
-        right: -70px;
-    }
-}
-
-// Smartphones
-@media (max-width: 539.99px) {
-
-    // from here, all side-tag are section title now
-    .right-tag,
-    .left-tag {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        left: 0;
-        right: 0;
-        top: 0;
-        transform: rotate(0);
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
-        -ms-transform: rotate(0);
-        -o-transform: rotate(0);
-    }
-
-    .right-tag {
-        flex-direction: row-reverse;
-    }
-
-
-    .hero {
-        .hero-container {
-            padding-left: 0;
-            padding-right: 0;
-
-            .hero-left {
-                h1 { font-size: 2rem; }
-                .bio-tags {
-                    flex-direction: column;
-                    gap: 1rem 0;
-                    li {
-                        &::after {
-                            top: 1.5rem;
-                            left: calc(50% - .3rem);
-                        }
-                    }
-                }
-            }
-        }
-
-        .left-tag {
-            top: calc(30% + 140px) !important;
-            left: -200px !important;
-            justify-content: center;
-            transform: rotate(270deg);
-            -webkit-transform: rotate(270deg);
-            -moz-transform: rotate(270deg);
-            -ms-transform: rotate(270deg);
-            -o-transform: rotate(270deg);
-        }
-    }
-}
-
-
-
-// Smartphones and small sreens
-@media (max-width: 429.99px) {
-
-    .container {
-        max-width: 99%;
-    }
-
-    .hero {
-        padding-top: 0;
-
-        // .left-tag {
-        //     top: calc(30% + 70px);
-        // }
-        .left-tag {
-
-            .side-btn {
-                font-size: .75rem;
-                padding: .4rem 1rem;
-            }
-
-            top: calc(30% + 70px) !important;
-            left: -150px !important;
-        }
-
-        .hero-container {
-            .hero-left {
-                h1 { font-size: 1.8rem; text-align: center; }
-                h3 {font-size: 1.3rem; margin-bottom: 1rem;}
-                .bio-tags {margin-bottom: 1.5rem;}
-                .btns {
-                    display: flex;
-                    width: 100%;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 1rem 0;
-
-                    .btn {
-                        margin: 0;
-                    }
-                }
-            }
-        }
-    }
-
-
-
-    .about {
-        .container {
-            .contents {
-                .btns {
-                    flex-direction: column;
-                    gap: 1rem 0;
-                    .btn {
-                        margin: 0;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// old/very small sreens
-@media (max-width: 349.99px) {
-
-    .hero {
-        min-height: calc(100vh - 150px);
-
-        .hero-container {
-            padding-left: 10px;
-            .hero-left {
-                h1 { font-size: 1.5rem; text-align: center; }
-                h3 {font-size: 1.1rem; margin-bottom: .8rem;}
-                .bio-tags {margin-bottom: 1rem;}
-                .btns {
-                    display: flex;
-                    width: 100%;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: .8 0;
-
-                    .btn {
-                        margin: 0;
-                    }
-                }
-            }
-        }
-
-        .left-tag {
-            .side-btn {
-                font-size: .45rem;
-                font-weight: 400;
-                padding: .4rem 1.5rem;
-            }
-            left: -120px !important;
-            top: 0;
-        }
-    }
-
-    .nav-sidebar {
-        .nav-menu {
-            display: flex;
-            flex-direction: column;
-            gap: .3rem 0;
-            width: 100%;
-            padding: 4rem 0 1rem;
-            height: auto;
-        }
+    .btn {
+        padding: .7rem 1.3rem;
     }
 }
