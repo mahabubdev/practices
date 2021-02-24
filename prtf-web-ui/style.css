@@ -187,7 +187,7 @@ section .visuals img {
   border: 2px solid #FA4D56;
 }
 
-.btn-fill {
+.btn-fill, .msn_active {
   background-color: #FA4D56;
   border: 2px solid #FA4D56;
   color: #FFFFFF;
@@ -673,5 +673,6 @@ section .visuals img {
 
 .masonry-nav .btn {
   padding: .7rem 1.3rem;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
