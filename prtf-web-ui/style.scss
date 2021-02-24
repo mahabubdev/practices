@@ -550,5 +550,11 @@ section {
 
     .btn {
         padding: .7rem 1.3rem;
+        margin: 0;
+    }
+
+    .msn_active {
+        background-color: $prColor;
+        color: $txtColor;
     }
 }
