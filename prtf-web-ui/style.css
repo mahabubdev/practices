@@ -673,6 +673,9 @@ section .visuals img {
 
 .masonry-nav .btn {
   padding: .7rem 1.3rem;
+}
+
+.masonry-nav .btn:first-child {
   margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

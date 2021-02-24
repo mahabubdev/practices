@@ -550,6 +550,6 @@ section {
 
     .btn {
         padding: .7rem 1.3rem;
-        margin: 0;
     }
+    .btn:first-child {margin: 0;}
 }
