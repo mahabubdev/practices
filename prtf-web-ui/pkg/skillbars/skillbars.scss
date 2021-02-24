@@ -29,7 +29,7 @@
         -o-transform: translateY(-3px);
     }
 
-    
+
 
     // skill image
     .sk_Img {
@@ -43,6 +43,7 @@
         img {
             width: 100%;
             clip-path: circle(50%);
+            object-fit: cover;
         }
     }
 

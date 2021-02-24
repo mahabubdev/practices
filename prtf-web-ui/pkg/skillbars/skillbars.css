@@ -48,6 +48,8 @@
   width: 100%;
   -webkit-clip-path: circle(50%);
           clip-path: circle(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 ._skbar_ .sk_info {
