@@ -81,6 +81,60 @@ ul, li {list-style: none;}
     -ms-transition: all .3s;
     -o-transition: all .3s;
 }
+
+/*=== custom cursor ===*/
+#cur {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 1px solid $prColor;
+
+    // after
+    &::after {
+        position: absolute;
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        background-color: transparent;
+        border: 5px solid #FA4D56;
+        opacity: .5;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    animation: curAnim .5s infinite alternate;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-animation: curAnim .5s infinite alternate;
+}
+
+@keyframes curAnim {
+    from {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    to {
+        transform: scale(.8);
+        -webkit-transform: scale(.8);
+        -moz-transform: scale(.8);
+        -ms-transform: scale(.8);
+        -o-transform: scale(.8);
+}
+}
+
 .menu-swith {
     display: none;
     justify-content: center;
@@ -392,6 +446,9 @@ section {
     -ms-border-radius: .4rem;
     -o-border-radius: .4rem;
 }
+
+
+
 
 /*===== CUSTOM CSS STYLES =====*/
 .header {

@@ -11,6 +11,30 @@
         // register all modules
         // console.log("Javascript initiated...!");
 
+        /*--- handle custom-cursor ---*/
+        var cursor = document.getElementById('cur');
+        // init
+        cursor.style.visibility = 'hidden';
+        cursor.style.opacity = 0;
+
+        document.addEventListener('mousemove', function(e) {
+            cursor.style.visibility = 'visible';
+            cursor.style.opacity = 1;
+            cursor.setAttribute("style", "top:" + (e.pageY - 8) + "px; left:" + (e.pageX - 8) + "px;");
+        });
+        document.addEventListener('scroll', function() {
+            cursor.style.visibility = 'hidden';
+            cursor.style.opacity = 0;
+        });
+
+        document.addEventListener('mouseleave', function(e){
+            cursor.style.visibility = 'hidden';
+            cursor.style.opacity = 0;
+        });
+
+
+
+
         // handle nav-menus
         handleNavs();
 
