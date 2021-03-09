@@ -97,6 +97,11 @@
     /**==============================*
      * Masonry
      *==============================*/
+    new Masonry({
+        rootElement: '.masonry',
+        nav: '.masonry-nav',
+        initialTarget: 'frontend'
+    });
     
 
 

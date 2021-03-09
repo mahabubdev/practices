@@ -4,14 +4,13 @@
 *==========================================*/
 
 ._skbar_ {
-
-
     display: flex;
     padding: 1.5rem 1rem;
     cursor: pointer;
     box-shadow: 0 .1rem .35rem 0 rgba(0, 0, 0, 0.2);
     transition: all .25s;
     border-radius: .5rem;
+    z-index: inherit;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
     -ms-border-radius: .5rem;
@@ -22,11 +21,11 @@
     -o-transition: all .25s;
 
     &:hover {
-        transform: translateY(-3px);
-        -webkit-transform: translateY(-3px);
-        -moz-transform: translateY(-3px);
-        -ms-transform: translateY(-3px);
-        -o-transform: translateY(-3px);
+        transform: translateY(-2px);
+        -webkit-transform: translateY(-2px);
+        -moz-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        -o-transform: translateY(-2px);
     }
 
 

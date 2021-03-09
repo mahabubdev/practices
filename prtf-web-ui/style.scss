@@ -71,10 +71,18 @@ b, strong {font-weight: 700;}
 a {text-decoration: none;}
 ul, li {list-style: none;}
 
-#mlogo {font-family: 'Monoton', cursive;}
+#mlogo {
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    color: #3e3e3e;
+    font-size: 2rem;
+    margin: 0;
+    line-height: 3rem;
+}
 .bdy_wrap {
     position: relative;
     overflow: hidden;
+    z-index: 1;
     transition: all .3s;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -92,6 +100,7 @@ ul, li {list-style: none;}
     height: 2rem;
     background-color: transparent;
     border: 1px solid $prColor;
+    z-index: 0;
 
     // after
     &::after {
@@ -456,16 +465,14 @@ section {
     padding: 0;
     min-height: var(--hdwd);
     width: 100%;
+    // background-color: #178b3a;
 
     // container
     .container {
         max-width: 1500px;
         width: 85%;
-    }
-
-    // logo
-    .logo {
-        font-size: 2.5em;
+        // background-color: #178b3a;
+        padding: 1rem;
     }
     
 }
@@ -618,7 +625,7 @@ section {
             -moz-transform: translateY(-2px);
             -ms-transform: translateY(-2px);
             -o-transform: translateY(-2px);
-}
+        }
 
         padding: .7rem 1.3rem;
         transition: all .25s;

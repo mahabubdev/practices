@@ -8,10 +8,11 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!--Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./pkg/skillbars/skillbars.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
@@ -26,7 +27,7 @@
         <!--Header-->
         <header class="header" id="top">
             <div class="container flx flx-between pt-3">
-                <a href="index.html" class="logo" id="mlogo">M</a>
+                <a href="index.html" class="logo" id="mlogo">&lt;Mahabub/&gt;</a>
 
                 <nav class="navbar flx flx-end al-center" id="navbar">
                     <ul class="menu nav-menu">
@@ -67,7 +68,7 @@
                     <h1>md mahabub a.</h1>
                     <h3 id="bio">full-stack developer</h3>
                     <ul class="bio-tags">
-                        <li>web developer</li>
+                        <li>developer</li>
                         <li>programmer</li>
                         <li>apps developer</li>
                     </ul>
@@ -92,7 +93,7 @@
             </div>
             <div class="container flx flx-between">
                 <div class="contents">
-                    <p>Hello! I'm Md Mahabub A., a passionate full-stack developer. I develop web applications, mobile applications, and desktop applications. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I love to make the web more open to the world. I'm a student of B.Sc. Hons. in Statistics at National University, Bangladesh. I am available for any kind of job opportunity that suits my interests.</p>
+                    <p>Hello! I'm Md Mahabub A., a passionate junior full-stack developer. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I love to make the more open to the world. I'm a student at National University. I am available for any kind of job opportunity that suits my interests.</p>
                     <div class="btns">
                         <a href="#" class="btn btn-fill">get resume</a>
                         <a href="#" class="btn btn-out">my skills</a>
@@ -116,34 +117,51 @@
             <div class="container">
                 <div class="masonry-wrap">
                     <ul class="masonry-nav" id="masonry_nav">
-                        <li class="btn btn-out msn_active" data-msn=".web">web</li>
-                        <li class="btn btn-out" data-msn=".program">programming</li>
-                        <li class="btn btn-out" data-msn=".apps">apps</li>
-                        <li class="btn btn-out" data-msn=".tool">tools</li>
-                        <li class="btn btn-out" data-msn=".other">others</li>
+                        <li class="btn btn-out msn_active" data-msn="frontend">frontend</li>
+                        <li class="btn btn-out" data-msn="design">design</li>
+                        <li class="btn btn-out" data-msn="backend">backend</li>
+                        <li class="btn btn-out" data-msn="program">programming</li>
+                        <li class="btn btn-out" data-msn="other">others</li>
                     </ul>
 
                     <div class="masonry grid grid-xl-md skill_bars py-3" id="masonry">
-                        <div class="msn-item skill_bar web apps" data-sk_name="JavaScript" data-sk_percent="92" data-sk_img="./images/skills/javascript.png"></div>
-                        <div class="msn-item skill_bar web apps program" data-sk_name="ES6" data-sk_percent="84" data-sk_img="./images/skills/es6.png"></div>
-                        <div class="msn-item skill_bar web apps" data-sk_name="NodeJS" data-sk_percent="86" data-sk_img="./images/skills/nodejs.png"></div>
-                        <div class="msn-item skill_bar web apps" data-sk_name="ReactJS" data-sk_percent="85" data-sk_img="./images/skills/reactjs.png"></div>
-                        <div class="msn-item skill_bar web apps" data-sk_name="Redux" data-sk_percent="80" data-sk_img="./images/skills/redux.png"></div>
-                        <div class="msn-item skill_bar web" data-sk_name="NextJS" data-sk_percent="76" data-sk_img="./images/skills/nextjs.png"></div>
-                        <div class="msn-item skill_bar web" data-sk_name="ExpressJS" data-sk_percent="85" data-sk_img="./images/skills/expressjs.png"></div>
-                        <div class="msn-item skill_bar tool" data-sk_name="GIT" data-sk_percent="92" data-sk_img="./images/skills/git.png"></div>
-                        <div class="msn-item skill_bar other" data-sk_name="MongoDB" data-sk_percent="88" data-sk_img="./images/skills/mongodb.png"></div>
-                        <div class="msn-item skill_bar other" data-sk_name="PostgreSQL" data-sk_percent="80" data-sk_img="./images/skills/postgres.png"></div>
-                        <div class="msn-item skill_bar other" data-sk_name="MySQL" data-sk_percent="86" data-sk_img="./images/skills/mysql.png"></div>
-                        <div class="msn-item skill_bar apps" data-sk_name="React Native" data-sk_percent="50" data-sk_img="./images/skills/react-native.png"></div>
-                        <div class="msn-item skill_bar apps" data-sk_name="Expo" data-sk_percent="50" data-sk_img="./images/skills/expo.png"></div>
-                        <div class="msn-item skill_bar apps" data-sk_name="ElectronJS" data-sk_percent="35" data-sk_img="./images/skills/electronjs.png"></div>
-                        <div class="msn-item skill_bar other" data-sk_name="Linux" data-sk_percent="78" data-sk_img="./images/skills/linux.jpg"></div>
-                        <div class="msn-item skill_bar tool other" data-sk_name="Docker" data-sk_percent="72" data-sk_img="./images/skills/docker.png"></div>
-                        <div class="msn-item skill_bar tool" data-sk_name="TravisCI" data-sk_percent="65" data-sk_img="./images/skills/travisci.png"></div>
-                        <div class="msn-item skill_bar tool other" data-sk_name="Kubernetes" data-sk_percent="24" data-sk_img="./images/skills/kubernetes.png"></div>
-                        <div class="msn-item skill_bar program web" data-sk_name="Python" data-sk_percent="65" data-sk_img="./images/skills/python.jpg"></div>
-                        <div class="msn-item skill_bar web program" data-sk_name="PHP" data-sk_percent="78" data-sk_img="./images/skills/php.png"></div>
+                        <div class="msn-item skill_bar program" data-sk_name="JavaScript" data-sk_percent="90" data-sk_img="./images/skills/javascript.png"></div>
+                        <div class="msn-item skill_bar program" data-sk_name="ES6" data-sk_percent="82" data-sk_img="./images/skills/es6.png"></div>
+                        <div class="msn-item skill_bar backend" data-sk_name="NodeJS" data-sk_percent="85" data-sk_img="./images/skills/nodejs.png"></div>
+                        <div class="msn-item skill_bar frontend" data-sk_name="React" data-sk_percent="86" data-sk_img="./images/skills/reactjs.png"></div>
+                        
+
+                        <div class="msn-item skill_bar design" data-sk_name="Saas (scss)" data-sk_percent="85" data-sk_img="./images/skills/sass.png"></div>
+                        <div class="msn-item skill_bar design" data-sk_name="Bootstrap" data-sk_percent="88" data-sk_img="./images/skills/bootstrap.png"></div>
+                        <div class="msn-item skill_bar design" data-sk_name="TailwindCSS" data-sk_percent="65" data-sk_img="./images/skills/tailwindcss.png"></div>
+                        <div class="msn-item skill_bar design" data-sk_name="Ant Design" data-sk_percent="70" data-sk_img="./images/skills/antd.jpg"></div>
+                        <div class="msn-item skill_bar design" data-sk_name="Material-UI" data-sk_percent="55" data-sk_img="./images/skills/material-ui.png"></div>
+
+                        <div class="msn-item skill_bar frontend" data-sk_name="React Router" data-sk_percent="82" data-sk_img="./images/skills/r-router.png"></div>
+                        <div class="msn-item skill_bar frontend" data-sk_name="Redux" data-sk_percent="72" data-sk_img="./images/skills/redux.png"></div>
+                        <div class="msn-item skill_bar frontend" data-sk_name="Apollo Client" data-sk_percent="70" data-sk_img="./images/skills/apollo.png"></div>
+                        <div class="msn-item skill_bar frontend" data-sk_name="NextJS" data-sk_percent="70" data-sk_img="./images/skills/nextjs.png"></div>
+                        <div class="msn-item skill_bar backend" data-sk_name="ExpressJS" data-sk_percent="82" data-sk_img="./images/skills/expressjs.png"></div>
+
+                        <div class="msn-item skill_bar backend" data-sk_name="Apollo Server" data-sk_percent="60" data-sk_img="./images/skills/apollo.png"></div>
+
+                        <div class="msn-item skill_bar other" data-sk_name="GIT" data-sk_percent="90" data-sk_img="./images/skills/git.png"></div>
+                        <div class="msn-item skill_bar backend" data-sk_name="MongoDB" data-sk_percent="88" data-sk_img="./images/skills/mongodb.png"></div>
+                        <div class="msn-item skill_bar backend" data-sk_name="PostgreSQL" data-sk_percent="80" data-sk_img="./images/skills/postgres.png"></div>
+                        <div class="msn-item skill_bar backend" data-sk_name="MySQL" data-sk_percent="86" data-sk_img="./images/skills/mysql.png"></div>
+                        <div class="msn-item skill_bar frontend" data-sk_name="React Native" data-sk_percent="45" data-sk_img="./images/skills/react-native.png"></div>
+                        <div class="msn-item skill_bar frontend" data-sk_name="Expo" data-sk_percent="45" data-sk_img="./images/skills/expo.png"></div>
+                        <div class="msn-item skill_bar frontend" data-sk_name="ElectronJS" data-sk_percent="35" data-sk_img="./images/skills/electronjs.png"></div>
+                        <div class="msn-item skill_bar other" data-sk_name="GraphQL" data-sk_percent="74" data-sk_img="./images/skills/GraphQL.png"></div>
+                        <div class="msn-item skill_bar other" data-sk_name="Firebase" data-sk_percent="72" data-sk_img="./images/skills/firebase.webp"></div>
+                        <div class="msn-item skill_bar other" data-sk_name="Linux" data-sk_percent="80" data-sk_img="./images/skills/linux.jpg"></div>
+                        <div class="msn-item skill_bar other" data-sk_name="Docker" data-sk_percent="72" data-sk_img="./images/skills/docker.png"></div>
+                        <div class="msn-item skill_bar other" data-sk_name="TravisCI" data-sk_percent="60" data-sk_img="./images/skills/travisci.png"></div>
+                        <div class="msn-item skill_bar other" data-sk_name="VS code" data-sk_percent="85" data-sk_img="./images/skills/vscode.png"></div>
+                        <div class="msn-item skill_bar other" data-sk_name="Kubernetes" data-sk_percent="15" data-sk_img="./images/skills/kubernetes.png"></div>
+                        <div class="msn-item skill_bar program backend" data-sk_name="Python" data-sk_percent="65" data-sk_img="./images/skills/python.jpg"></div>
+                        <div class="msn-item skill_bar program" data-sk_name="C programming" data-sk_percent="30" data-sk_img="./images/skills/C.png"></div>
+                        <div class="msn-item skill_bar program backend" data-sk_name="PHP" data-sk_percent="75" data-sk_img="./images/skills/php.png"></div>
                     </div>
                 </div>
             </div>
@@ -154,6 +172,7 @@
     <!--//Body Wrapper-->
 
     <!--JavaScripts-->
+    <script src="./pkg/masonry/masonry.js"></script>
     <script src="./pkg/skillbars/skillbars.js"></script>
     <script src="app.js"></script>
 </body>
