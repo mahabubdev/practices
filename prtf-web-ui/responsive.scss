@@ -167,6 +167,10 @@ $txtColorLite: #6e6e6e;
     .left-tag {
         left: -40px;
     }
+
+    #cur {
+        display: none;
+    }
 }
 
 // custom solves
@@ -212,6 +216,15 @@ $txtColorLite: #6e6e6e;
 
     .nav-sidebar {
         width: 100%;
+        .btn-menu {
+            display: none;
+        }
+        .nav-menu {
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            max-height: 100%;
+        }
     }
 
     .right-tag {
@@ -236,6 +249,10 @@ $txtColorLite: #6e6e6e;
     .masonry-nav {
         flex-direction: column;
         gap: 1rem 0;
+    }
+
+    .logo {
+        font-size: 1.5rem !important;
     }
 
 }
