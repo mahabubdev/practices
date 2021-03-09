@@ -636,6 +636,7 @@ section .visuals img {
   display: inline-block;
   position: relative;
   text-transform: capitalize;
+  color: #6e6e6e;
 }
 
 .hero .bio-tags li::after {
