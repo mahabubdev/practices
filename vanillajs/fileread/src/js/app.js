@@ -5,7 +5,7 @@
 
  // modules
  var generateID = function () {
-    return Math.random(100,999).toString(14).substr(2);
+    return Math.random(1000,9999).toString(16).substr(2);
 };
 
  // states
@@ -34,7 +34,7 @@
     }
 
     // assign
-   addFile() {
+    addFile() {
 
        var newFile = {
            id: this.fileID,
@@ -48,7 +48,7 @@
     }
 
     // remove
-   delFile(ctx) {
+    delFile(ctx) {
        state.splice(state.findIndex(f => f.id === ctx), 1);
     }
 }
