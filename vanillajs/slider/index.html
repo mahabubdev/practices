@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mSlider Demo</title>
+    <!--Stylesheets-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./dist/mslider.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--page wrapper-->
+    <div class="wrapper">
+        <!--mSlider-->
+        <div class="mslider_container">
+            <!--msilder-item-->
+            <div data-bgimg="./images/001.jpg" class="mslider-active">
+                <div class="container">
+                    <div class="caption">
+                        <h1 class="animate__animated animate__bounceInUp">Slider 01</h1>
+                        <p class="animate__animated animate__bounceInLeft">Welcome to mSlider vanilla JavaScripts plugin</p>
+                        <a href="#" class="btn btn-pr animate__animated animate__bounce">explore now</a>
+                    </div>
+                </div>
+            </div>
+            <div data-bgimg="./images/002.jpg">
+                <div class="container">
+                    <div class="caption">
+                        <h1 class="animate__animated animate__bounceInUp">Slider 02</h1>
+                        <p class="animate__animated animate__bounceInLeft">Welcome to mSlider vanilla JavaScripts plugin</p>
+                        <a href="#" class="btn btn-pr animate__animated animate__bounce">explore now</a>
+                    </div>
+                </div>
+            </div>
+            <div data-bgimg="./images/003.jpg" class="">
+                <div class="container">
+                    <div class="caption">
+                        <h1 class="animate__animated animate__bounceInUp">Slider 03</h1>
+                        <p class="animate__animated animate__bounceInLeft">Welcome to mSlider vanilla JavaScripts plugin</p>
+                        <a href="#" class="btn btn-pr animate__animated animate__bounce">explore now</a>
+                    </div>
+                </div>
+            </div>
+            <div data-bgimg="./images/004.jpg">
+                <div class="container">
+                    <div class="caption">
+                        <h1 class="animate__animated animate__bounceInUp">Slider 04</h1>
+                        <p class="animate__animated animate__bounceInLeft">Welcome to mSlider vanilla JavaScripts plugin</p>
+                        <a href="#" class="btn btn-pr animate__animated animate__bounce">explore now</a>
+                    </div>
+                </div>
+            </div>
+            <!--//msilder-item-->
+        </div>
+        <!--//mSlider-->
+    </div>
+    <!--//page wrapper-->
+
+    <!--JavaScripts-->
+    <script src="./dist/mslider.js"></script>
+    <script type="text/javascript">
+        var _mslider = new mSilder({
+            containerElement: '.mslider_container',
+            // overlay: {
+            //     status: true,
+            //     bgColor: 'rgba(0,0,0,0.75)',
+            //     zIndex: '-1',
+            // },
+        }); // empty object for all default
+    </script>
+</body>
+</html>
